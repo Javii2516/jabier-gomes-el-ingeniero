@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Perfumes en Venta</h1>
+  <div class="perfume-container">
+    <div class="perfume">
+      <img src="img/P1.webp" alt="Perfume 1" onclick="mostrarDescripcion('Chanel N°5', 'El Chanel N°5 es una fragancia icónica y sus ingredientes han sido objeto de especulación y secreto durante décadas. La fórmula exacta del perfume es un secreto bien guardado por Chanel. Sin embargo, se sabe que el Chanel N°5 contiene una mezcla de ingredientes de alta calidad, incluyendo notas florales, especias y almizcles. El perfume se caracteriza por su combinación de notas de salida, medias y de fondo, que se despliegan en capas para crear su aroma distintivo.')">
+      <p>Chanel N°5</p>
+    </div>
+    <div class="perfume">
+      <img src="img/P2.png" alt="Perfume 2" onclick="mostrarDescripcion('Dior J adore', 'El Dior J adore esta hecho de flores blancas, como magnolia y jazmín, junto con frutas jugosas, como pera y melocotón, madera de cedro y dulce vainilla. Una fragancia floral, afrutada y cálida que encarna la elegancia y la feminidad con exquisita sofisticación.')">
+      <p>Dior J'adore</p>
+    </div>
+    <div class="perfume">
+      <img src="img/P3.png" alt="Perfume 3" onclick="mostrarDescripcion('Guerlain Shalimar', 'Guerlain Shalimar se compone de notas cítricas, flores, vainilla y ambarinas. Su mezcla incluye bergamota, iris, rosa, vainilla y opopónaco, creando una fragancia oriental y sensual que combina frescura cítrica con calidez y profundidad amaderada.')">
+      <p>Guerlain Shalimar</p>
+    </div>
+    <div class="perfume">
+      <img src="img/P4.webp" alt="Perfume 4" onclick="mostrarDescripcion('Creed Aventus', 'Creed Aventus es una fragancia masculina que contiene una combinación distintiva de notas frutales, amaderadas y ahumadas. Con ingredientes como piña, bergamota, manzana, madera de cedro y musgo de roble, Aventus se caracteriza por su aroma fresco, sofisticado y audaz.')">
+      <p>Creed Aventus</p>
+    </div>
+  </div>
+  <div class="perfume-container">
+    <div class="perfume">
+      <img src="img/P5.webp" alt="Perfume 5" onclick="mostrarDescripcion('Tom Ford Black Orchid', 'Tom Ford Black Orchid, un perfume seductor y opulento, está compuesto por notas de trufa, orquídea negra, ylang-ylang, frutas cítricas, especias y maderas preciosas, esta combinación única crea una fragancia intensa, exótica y misteriosa que cautiva los sentidos con su sofisticación distintiva.')">
+      <p>Tom Ford Black Orchid</p>
+    </div>
+    <div class="perfume">
+      <img src="img/P6.webp" alt="Perfume 6" onclick="mostrarDescripcion('Hermès Terre d Hermès', 'Hermès Terre d Hermès se compone de una mezcla terrosa y amaderada. Sus ingredientes incluyen notas de naranja, pimienta, cedro, vetiver y pachulí. Esta fragancia evoca una sensación de conexión con la naturaleza y la tierra, creando una experiencia única y masculina.')">
+      <p>Hermès Terre d'Hermès</p>
+    </div>
+    <div class="perfume">
+      <img src="img/P7.png" alt="Perfume 7" onclick="mostrarDescripcion('Yves Saint Laurent Opium', 'Yves Saint Laurent Opium es una fragancia oriental especiada compuesta por una combinación cautivadora de notas. Sus ingredientes incluyen bergamota, clavo de olor, jazmín, pachulí, ámbar y vainilla. Opium ofrece una experiencia exótica y enigmática, con un aura sensual y adictiva.')">
+      <p>Yves Saint Laurent Opium</p>
+    </div>
+    <div class="perfume">
+      <img src="img/P8.webp" alt="Perfume 8" onclick="mostrarDescripcion('Jo Malone Lime Basil & Mandarin', 'Jo Malone Lime Basil & Mandarin combina notas refrescantes y aromáticas, está compuesto por una mezcla de lima fresca, albahaca herbácea, mandarina jugosa y vetiver terroso. Esta fragancia cítrica y vivaz captura la esencia de la vitalidad y la frescura con su combinación única de ingredientes.')">
+      <p>Jo Malone Lime Basil & Mandarin</p>
+    </div>
+  </div>
+
+  <div id="descripcion-overlay" onclick="cerrarDescripcion()"></div>
+  <div id="descripcion-popup">
+    <h2 id="descripcion-titulo"></h2>
+    <img id="descripcion-imagen" src="">
+    <p id="descripcion-texto"></p>
+    <button id="comprar-btn">Comprar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <table class="container">
+    <tr>
+      <td>
+        <h1>Registro</h1>
+
+        <form>
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div>
+
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="date-selects">
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <select id="dia_nacimiento" name="dia_nacimiento" required>
+              <option value="">Día</option>
+              <!-- Opciones para los días -->
+              <script>
+                for (var i = 1; i <= 31; i++) {
+                  document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+              </script>
+            </select>
+            <select id="mes_nacimiento" name="mes_nacimiento" required>
+              <option value="">Mes</option>
+              <option value="1">Enero</option>
+              <option value="2">Febrero</option>
+              <option value="3">Marzo</option>
+              <option value="4">Abril</option>
+              <option value="5">Mayo</option>
+              <option value="6">Junio</option>
+              <option value="7">Julio</option>
+              <option value="8">Agosto</option>
+              <option value="9">Septiembre</option>
+              <option value="10">Octubre</option>
+              <option value="11">Noviembre</option>
+              <option value="12">Diciembre</option>
+            </select>
+            <select id="anio_nacimiento" name="anio_nacimiento" required>
+              <option value="">Año</option>
+              <!-- Opciones para los años -->
+              <script>
+                var anioActual = new Date().getFullYear();
+                for (var i = anioActual; i >= anioActual - 100; i--) {
+                  document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+              </script>
+            </select>
+          </div>
+
+          <div>
+            <label for="ciudad_nacimiento">Ciudad de nacimiento:</label>
+            <input type="text" id="ciudad_nacimiento" name="ciudad_nacimiento" required>
+          </div>
+
+          <div>
+            <label for="pais_nacimiento">País de nacimiento:</label>
+            <select id="pais_nacimiento" name="pais_nacimiento" required>
+              <option value="">Selecciona un país</option>
+              <option value="Mexico">México</option>
+              <option value="Espana">España</option>
+              <option value="EUA">Estados Unidos</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Egipto">Egipto</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad" required>
+              <option value="">Selecciona una nacionalidad</option>
+              <option value="Mexicano">Mexicano/a</option>
+              <option value="Español">Español/a</option>
+              <option value="Estadounidense">Estadounidense</option>
+              <option value="Venezolano">Venezolano/a</option>
+              <option value="Egipcio">Egipcio/a</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="num_pasaporte">Número de pasaporte:</label>
+            <input type="text" id="num_pasaporte" name="num_pasaporte" required>
+          </div>
+
+          <div>
+            <label for="pais_emision">País de emisión del pasaporte:</label>
+            <select id="pais_emision" name="pais_emision" required>
+              <option value="">Selecciona un país</option>
+              <option value="Mexico">México</option>
+              <option value="Espana">España</option>
+              <option value="EUA">Estados Unidos</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Egipto">Egipto</option>
+            </select>
+          </div>
+
+          <div class="date-selects">
+            <label for="fecha_emision">Fecha de emisión del pasaporte:</label>
+            <select id="dia_emision" name="dia_emision" required>
+              <option value="">Día</option>
+              <!-- Opciones para los días -->
+              <script>
+                for (var i = 1; i <= 31; i++) {
+                  document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+              </script>
+            </select>
+            <select id="mes_emision" name="mes_emision" required>
+              <option value="">Mes</option>
+              <option value="1">Enero</option>
+              <option value="2">Febrero</option>
+              <option value="3">Marzo</option>
+              <option value="4">Abril</option>
+              <option value="5">Mayo</option>
+              <option value="6">Junio</option>
+              <option value="7">Julio</option>
+              <option value="8">Agosto</option>
+              <option value="9">Septiembre</option>
+              <option value="10">Octubre</option>
+              <option value="11">Noviembre</option>
+              <option value="12">Diciembre</option>
+            </select>
+            <select id="anio_emision" name="anio_emision" required>
+              <option value="">Año</option>
+              <!-- Opciones para los años -->
+              <script>
+                var anioActual = new Date().getFullYear();
+                for (var i = anioActual; i <= anioActual + 10; i++) {
+                  document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+              </script>
+            </select>
+          </div>
+
+          <div class="date-selects">
+            <label for="fecha_vencimiento">Fecha de vencimiento del pasaporte:</label>
+            <select id="dia_vencimiento" name="dia_vencimiento" required>
+              <option value="">Día</option>
+              <!-- Opciones para los días -->
+              <script>
+                for (var i = 1; i <= 31; i++) {
+                  document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+              </script>
+            </select>
+            <select id="mes_vencimiento" name="mes_vencimiento" required>
+              <option value="">Mes</option>
+              <option value="1">Enero</option>
+              <option value="2">Febrero</option>
+              <option value="3">Marzo</option>
+              <option value="4">Abril</option>
+              <option value="5">Mayo</option>
+              <option value="6">Junio</option>
+              <option value="7">Julio</option>
+              <option value="8">Agosto</option>
+              <option value="9">Septiembre</option>
+              <option value="10">Octubre</option>
+              <option value="11">Noviembre</option>
+              <option value="12">Diciembre</option>
+            </select>
+            <select id="anio_vencimiento" name="anio_vencimiento" required>
+              <option value="">Año</option>
+              <!-- Opciones para los años -->
+              <script>
+                var anioActual = new Date().getFullYear();
+                for (var i = anioActual; i <= anioActual + 20; i++) {
+                  document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+              </script>
+            </select>
+          </div>
+
+          <div class="submit-button">
+            <input type="submit" value="Guardar">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

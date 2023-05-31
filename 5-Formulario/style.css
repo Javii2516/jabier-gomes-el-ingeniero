@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  max-width: 500px;
+  background-color: gray;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+form label,
+form input,
+form select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 30px;
+  background-image: url("https://cdn.iconscout.com/icon/free/png-256/down-arrow-1767479-1502365.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+form .date-selects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  text-align: center;
+}

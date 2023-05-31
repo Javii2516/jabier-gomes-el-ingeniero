@@ -1,0 +1,143 @@
+body{
+    width: 1000px;
+    height: 950px;
+    background-color: aqua;
+    float: left;
+}
+
+nav{
+    width: 1000px;
+    height: 100px;
+    background-color: green;
+    border: 9px solid black;
+    margin: -8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+}
+.box{
+
+    width: 160px;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    float: left;
+    border: 1px solid rgb(43, 6, 255);
+}
+header{
+    width: 1000px;
+    height: 300px;
+    background-color: rgb(45, 45, 255);
+    border: 9px solid black;
+    margin: -8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+}
+#banner{
+    width: 800px;
+    height: 280px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    float: left;
+    border: 1px solid black;
+}
+#logo{
+    width: 200px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    float: left;
+    border: 1px solid black;
+}
+#login
+{
+    width: 200px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    float: left;
+    border: 1px solid black;
+}
+#form
+{
+    width: 200px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    float: left;
+    border: 1px solid black;
+}
+main{
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    border-color: white;
+    border: 9px solid black;
+    margin: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+}
+#left{
+    width: 185px;
+    height: 485px;
+    background-color: rgb(255, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border: 8px solid rgb(148, 153, 73);
+}
+article{
+    width: 480px;
+    height: 485px;
+    background-color: rgb(255, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border: 8px solid rgb(148, 153, 73);
+}
+#right{
+    width: 290px;
+    height: 485px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border: 8px solid rgb(148, 153, 73);
+}
+
+footer{
+    width: 1000px;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border: 9px solid rgb(7, 7, 7);
+}
