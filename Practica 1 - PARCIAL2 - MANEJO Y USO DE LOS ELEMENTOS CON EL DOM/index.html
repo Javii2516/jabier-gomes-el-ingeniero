@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p id="p1">Javier el database :D</p>
+    <script>
+    document.getElementById("p1").innerHTML = "Hola Mundo :D";
+    </script>
+
+    <h1 id="Titulo">¡TE AMO MESSI, TE AMOOOOO!</h1>
+    <script>
+        const elemento = document.getElementById("Titulo");
+        elemento.innerHTML = "Mi titulin";
+
+        const x = document.getElementById("main");
+        console.log(x);
+
+        const y = document.getElementById("p1");
+        console.log(y);
+
+        const z = document.getElementsByClassName("intro");
+        console.log(z);
+    </script>
+    
+    <p class="intro">Ejemplin de teclado</p>
+    <p class="intro">Ejemplo por Javier</p>
+
+    <script>
+        const a = document.querySelectorAll(".intro");
+    </script>
+    
+    <ul id="miLista">
+        <li>Javier</li>
+        <li>Messi</li>
+        <li>Cristiano Ronaldo</li>
+        <li>Te amo Messi</li>
+        <li>No se que mas poner xd</li>
+    </ul>
+
+    <script>
+        const listItems = document.querySelectorAll("ul li");
+        console.log(listItems);
+    </script>
+
+    <h1 id="b">Ejemplin 2</h1>
+    
+    <script>
+        const h1elements = document.querySelector("h1");
+        console.log(h1elements);
+    </script>
+
+    <ul id="miLista">
+        <li>Javier</li>
+        <li>Messi</li>
+        <li>Cristiano Ronaldo</li>
+        <li>Te amo Messi</li>
+        <li>No se que mas poner xd</li>
+    </ul>
+
+    <script>
+        const list1 = document.querySelector("#miLista");
+        console.log(list1);
+    </script>
+
+    <ul id="miListaForich">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+
+    <script>
+    const ListaDeForeach = document.querySelectorAll("ul#miListaForich > li");
+        
+    ListaDeForeach.forEach((miListaForich) => {
+      console.log(miListaForich.innerHTML);
+    });
+
+    const h1 = document.querySelector("h1");
+    h1.style.color = "blue";
+
+    </script>
+
+    <form id="frm1" onsubmit="return validacion()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" >
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" >
+
+        <label for="profesion">Profesión:</label>
+        <input type="text" id="profesion" name="profesion"  >
+
+    </form>
+
+    <script>
+        const b = document.forms["frm1"];
+        let texto= "";
+        for(let i = 0 ; i< b.length; i++){
+            texto += b.elements [i].value + "<br>";
+        }
+
+        document.getElementById("p1").innerHTML = texto;
+        console.log(b);
+
+        let listota = document.createElement("ul");
+        document.body.appendChild(listota);
+
+        let elemento1 = document.createElement("li");
+        elemento1.textContent = "Tarea";
+        listota.appendChild(elemento1);
+
+        let elemento2 = document.createElement ("li");
+        elemento2.textContent = "Aplicaciones web";
+        listota.appendChild(elemento2);
+    </script>
+
+    <label for="numero">Número:</label>
+    <input type="text" id="numero" name="numero">
+
+    <button type="button" onclick="return validarNumero()">Validar</button>
+
+    <p id="demo"></p>
+    <script>
+
+        document.getElementById("demo").innerHTML = "fecha " + Date();
+    </script>
+      
+    <script>
+    function validarNumero() {
+        let e = document.getElementById("numero").value;
+        let texto;
+
+        if (isNaN(e) || e < 1 || e > 10) {
+            texto = "No válido";
+        } else {
+            texto = "¡Es peligroso ir solo! ¡Toma esta espada!";
+        }
+
+        document.getElementById("demo").innerHTML = texto;
+
+        return false;
+    }
+    </script>
+
+    <script>
+        
+        const button = document.querySelector("input[type='submit']");
+        button.addEventListener("click", (event) => {
+            alert("¡Clickeado con éxito!");
+        });
+
+    </script>
+
+    <script>
+    function validacion(){
+        let d = document.forms["frm1"]["profesion"].value;
+        if(d === ""){
+            alert("No puedes continuar, por favor llena todo");
+            return false;
+        }
+        return true;
+    }
+    </script>
+ 
+    <img id="myImage" src="foto.jpg" alt="Mi imagen">
+
+    <script>
+        const imgElement = document.getElementById("myImage");
+
+        imgElement.src = "foto.jpg";
+    </script>
+    
+    <p id="demo"></p>
+</body>
+</html>
