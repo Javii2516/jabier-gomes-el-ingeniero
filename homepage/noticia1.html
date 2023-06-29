@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mis Tareas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+    h1 {
+      margin: 0;
+    }
+    main {
+      padding: 20px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .card:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header onclick="redirectTo('index.html')">
+    <h1>Mis Tareas</h1>
+  </header>
+
+  <main>
+    <div class="card-container">
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/1-Maquetado%201/index.html')">
+        <h2>Tarea 1</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/2-Maquetado%202/index.html')">
+        <h2>Tarea 2</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/3-Curriculum/index%202.html')">
+        <h2>Tarea 3</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/4-Mapa/index.html')">
+        <h2>Tarea 4</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/5-Formulario/index.html')">
+        <h2>Tarea 5</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/6-Formulario%202/index.html')">
+        <h2>Tarea 6</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/7-Google/index.html')">
+        <h2>Tarea 7</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/8-Pagina%20de%20vender/index.html')">
+        <h2>Tarea 8</h2>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Derechos reservados &copy; 2023</p>
+  </footer>
+
+  <script>
+    function redirectTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

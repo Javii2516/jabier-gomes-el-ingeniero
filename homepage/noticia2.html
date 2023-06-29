@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mis Tareas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+    h1 {
+      margin: 0;
+    }
+    main {
+      padding: 20px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .card:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header onclick="redirectTo('index.html')">
+    <h1>Mis Tareas</h1>
+  </header>
+
+  <main>
+    <div class="card-container">
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/Practica%201%20-%20PARCIAL2%20-%20MANEJO%20Y%20USO%20DE%20LOS%20ELEMENTOS%20CON%20EL%20DOM/index.html')">
+        <h2>Tarea 1</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/Practica%202%20Bootstrap/index3.html')">
+        <h2>Tarea 2</h2>
+      </div>
+      <div class="card" onclick="redirectTo('https://github.com/Javii2516/jabier-gomes-el-ingeniero/blob/main/Practica%20Consumo%20de%20API/peliculas.html')">
+        <h2>Tarea 3</h2>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Derechos reservados &copy; 2023</p>
+  </footer>
+
+  <script>
+    function redirectTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
