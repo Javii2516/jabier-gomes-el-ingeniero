@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tarea API</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="loadRickAndMortyEpisodes()">Episodios de Rick and Morty</a></li>
+    </ul>
+  </nav>
+  
+  <div id="character-card">
+    <img id="character-image" src="">
+    <h2 id="character-name"></h2>
+    <p id="character-details"></p>
+    <button onclick="showModal()">Ver detalles</button>
+  </div>
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-name"></h2>
+      <p id="modal-details"></p>
+    </div>
+  </div>
+  
+  <div id="episodes">
+    <h2>Episodios de Rick and Morty</h2>
+    <div id="episode-container"></div>
+    <button onclick="loadMoreEpisodes()">Cargar más episodios</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
