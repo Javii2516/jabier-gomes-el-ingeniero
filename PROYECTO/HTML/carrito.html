@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carrito de Compras</title>
+        <link rel="icon" href="../IMG/PAGE.png">
+        <link rel="stylesheet" href="../CSS/styles_carrito.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-container">
+                <a href="../HTML/index.html" id="cart-link">
+                    <img src="../IMG/LOGO.png" alt="Logo de Game Zone" class="logo">
+                </a>
+            </div>
+        </header>
+        <h1>
+            Tus Productos 
+        </h1>
+        <div id="cart-container">
+            <table id="cart-table">
+                <tr>
+                    <th>Nombre del juego</th>
+                    <th>Precio</th>
+                    <th></th>
+                </tr>
+            </table>
+            <p id="total-price">Total: </p>
+            <button id="comprar-button">Comprar</button>
+        </div>
+
+        <script src="../JS/script_carrito1.js"></script>
+        <script src="/JS/script_API2.js"></script>    
+        <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD"></script>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Zone</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../IMG/PAGE.png">
+        <link rel="stylesheet" href="../CSS/styles_CREATE.css">
+    </head>
+    <body>
+        <img src="../IMG/LOGO 2.png">
+        <div class="login-box">
+            <h2>Crear nueva cuenta</h2>
+            <form action="../HTML/confirmacion.html" method="post" onsubmit="return validateForm()">
+                <input type="text" id="nombres" placeholder="Nombres" required>
+                <input type="text" id="apellidos" placeholder="Apellidos" required>
+                <input type="text" id="correo" placeholder="Correo electrónico" required>
+                <input type="text" id="telefono" placeholder="Número telefónico" required>
+                <input type="text" id="contrasena" placeholder="Contraseña" required>
+                <input type="text" id="confirmar-contrasena" placeholder="Confirmar contraseña" required>
+                <button class="create-account-button" type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <script src="../JS/script_CREATE.js"></script>
+    </body>
+</html>
